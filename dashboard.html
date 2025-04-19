@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-user-circle"></i> User Panel</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li class="menu-section"><i class="fas fa-file-alt"></i> Forms</li>
+                <li><a href="#" data-form="mposRequisition"><i class="fas fa-mobile-alt"></i> MPOS Requisition</a></li>
+                <li><a href="#" data-form="mposTracking"><i class="fas fa-map-marker-alt"></i> MPOS Tracking</a></li>
+                <li><a href="#" data-form="offlineMpos"><i class="fas fa-wifi-slash"></i> Offline MPOS</a></li>
+                <li><a href="#" data-form="wauSouth"><i class="fas fa-map"></i> Wau South</a></li>
+                <li><a href="#" data-form="wauNorth"><i class="fas fa-map"></i> Wau North</a></li>
+                <li><a href="#" data-form="gsmMomo"><i class="fas fa-sim-card"></i> GSM & MoMo</a></li>
+                <li><a href="#" data-form="timeTable"><i class="fas fa-calendar-alt"></i> Timetable</a></li>
+                <li><a href="#" data-form="flexenAddition"><i class="fas fa-plus-circle"></i> Flexen Addition</a></li>
+                <li><a href="#" data-form="simReg"><i class="fas fa-id-card"></i> SIM Registration</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="btn btn-danger">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Content -->
+            <div id="dashboard-content" class="dashboard-content">
+                <div class="dashboard-header">
+                    <h1><i class="fas fa-tachometer-alt"></i> User Dashboard</h1>
+                </div>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-id-card"></i>
+                        <h3>Total Registrations</h3>
+                        <p id="totalRegistrations">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Total MPOS</h3>
+                        <p id="totalMpos">0</p>
+                    </div>
+                </div>
+                <div class="dashboard-tables">
+                    <div class="table-container">
+                        <h3><i class="fas fa-history"></i> Recent Registrations</h3>
+                        <table id="recentRegistrations">
+                            <thead>
+                                <tr>
+                                    <th><i class="fas fa-calendar"></i> Date</th>
+                                    <th><i class="fas fa-user"></i> Freelancer</th>
+                                    <th><i class="fas fa-barcode"></i> MPOS Code</th>
+                                    <th><i class="fas fa-info-circle"></i> Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Recent registrations will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Container -->
+            <div id="form-container" class="form-container" style="display: none;">
+                <!-- Forms will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/user.js"></script>
+</body>
+</html> 

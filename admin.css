@@ -1,0 +1,90 @@
+.admin-management h2 {
+    color: var(--mtn-blue);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-management h2 i {
+    margin-right: 10px;
+    color: var(--mtn-blue);
+}
+
+.user-form h2,
+.role-form h2,
+.permission-form h2 {
+    color: var(--mtn-blue);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-actions .btn-primary {
+    background-color: var(--mtn-blue);
+    color: var(--mtn-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-actions .btn-primary:hover {
+    background-color: #002244;
+}
+
+.users-table th,
+.roles-table th,
+.permissions-table th {
+    background-color: var(--mtn-blue);
+    color: var(--mtn-light);
+    padding: 12px;
+    text-align: left;
+}
+
+.users-table th i,
+.roles-table th i,
+.permissions-table th i {
+    color: var(--mtn-light);
+    margin-right: 8px;
+}
+
+.btn-sm.btn-primary {
+    background-color: var(--mtn-blue);
+    color: var(--mtn-light);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-sm.btn-primary:hover {
+    background-color: #002244;
+}
+
+.btn-sm.btn-danger {
+    background-color: #CC0000;
+    color: var(--mtn-light);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-sm.btn-danger:hover {
+    background-color: #A30000;
+}
+
+.form-group label i {
+    color: var(--mtn-blue);
+    margin-right: 8px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--mtn-blue);
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.2);
+} 
