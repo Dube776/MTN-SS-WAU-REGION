@@ -2,13 +2,13 @@
 function checkAuth() {
     const currentUser = localStorage.getItem('currentUser');
     if (!currentUser) {
-        window.location.href = '../index.html';
+        window.location.href = 'index.html';
         return;
     }
     
     const user = JSON.parse(currentUser);
     if (user.role !== 'admin') {
-        window.location.href = '../pages/user/dashboard.html';
+        window.location.href = 'dashboard.html';
     }
 }
 
@@ -18,7 +18,7 @@ checkAuth();
 // Handle logout
 document.getElementById('logoutBtn').addEventListener('click', function() {
     localStorage.removeItem('currentUser');
-    window.location.href = '../../index.html';
+    window.location.href = 'index.html';
 });
 
 // Toggle sidebar
@@ -284,7 +284,7 @@ function initializeDashboard() {
     if (logoutBtn) {
         logoutBtn.addEventListener('click', function() {
             localStorage.removeItem('currentUser');
-            window.location.href = '../../index.html';
+            window.location.href = 'index.html';
         });
     }
 
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check authentication
     const currentUser = JSON.parse(localStorage.getItem('currentUser') || 'null');
     if (!currentUser || currentUser.role !== 'admin') {
-        window.location.href = '../../index.html';
+        window.location.href = 'index.html';
         return;
     }
 
